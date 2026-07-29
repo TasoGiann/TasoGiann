@@ -86,7 +86,7 @@ Build documentation: [`dfir-home-lab`](https://github.com/TasoGiann/dfir-home-la
 | **In progress** | CompTIA Security+ (SY0-701) — exam September 2026 |
 | **Certified** | TryHackMe Cyber Security 101 (SEC1) · Google Cybersecurity Professional Certificate |
 | **Next** | HTB Certified Defensive Security Analyst (CDSA) |
-| **Degree** | BSc (Hons) Cybersecurity & Networks — Metropolitan College, in partnership with University of East London · second year, ongoing |
+| **Degree** | BSc (Hons) Cybersecurity & Networks - University of East London · second year, ongoing |
  
 ---
  
