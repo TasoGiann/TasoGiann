@@ -6,14 +6,13 @@
 <img src="https://img.shields.io/badge/Security%2B-In%20Progress-C1440E?style=for-the-badge">
 <img src="https://img.shields.io/badge/Location-Greece%20%C2%B7%20Remote%20-004080?style=for-the-badge">
 </p>
----
  
 I work an alert from the first log line to a written conclusion someone else can act on.
  
-Three years of frontline account-security work — compromised access, failed authentication, phishing reports, all under GDPR and client security procedure — plus a home SOC where I ingest Windows Security and Sysmon telemetry into Splunk and build detections against it. Second year of a BSc in Cybersecurity & Networks, studying for **CompTIA Security+ (SY0-701)**, exam September 2026.
- 
-Long term I'm heading for **DFIR**. The road there runs through a SOC, so that's what I'm building for now.
- 
+Coming from a customer support background, I now run a home SOC where I ingest Windows Security and Sysmon telemetry into Splunk and build detections against it. Second year of a BSc in Cybersecurity & Networks, studying for CompTIA Security+ (SY0-701), exam September 2026.
+
+Long term I'm heading for DFIR. The road there runs through a SOC, so that's what I'm building for now.
+
 Everything in these repositories is my own lab work, written up in my own words.
  
 ---
