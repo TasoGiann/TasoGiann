@@ -1,93 +1,103 @@
-# Tasos Giannoulis
+<h1 align="center">Tasos Giannoulis</h1>
+<p align="center"><b>SOC Analyst (Tier 1)</b> — alert triage · log analysis · incident documentation</p>
+<p align="center">
+<a href="https://www.linkedin.com/in/tasos-giannoulis/"><img src="https://img.shields.io/badge/LinkedIn-0072b1?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<img src="https://img.shields.io/badge/Focus-SOC%20Analyst%20(Tier%201)-0B3D91?style=for-the-badge">
+<img src="https://img.shields.io/badge/Security%2B-In%20Progress-C1440E?style=for-the-badge">
+<img src="https://img.shields.io/badge/Location-Greece%20%C2%B7%20Remote%20OK-004080?style=for-the-badge">
+</p>
+---
  
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0072b1?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tasos-giannoulis/)
-[![Focus](https://img.shields.io/badge/Focus-SOC%20Analyst-0B3D91?style=for-the-badge)]()
-[![Location](https://img.shields.io/badge/Location-Greece-004080?style=for-the-badge)]()
+I work an alert from the first log line to a written conclusion someone else can act on.
  
-**SOC Analyst (Tier 1)** in the making — alert triage, log analysis and incident documentation.
-Currently studying for **CompTIA Security+ (SY0-701)** and in the second year of a BSc in Cybersecurity & Networks at Metropolitan College, in partnership with the University of East London. Based in Greece, open to remote.
+Three years of frontline account-security work — compromised access, failed authentication, phishing reports, all under GDPR and client security procedure — plus a home SOC where I ingest Windows Security and Sysmon telemetry into Splunk and build detections against it. Second year of a BSc in Cybersecurity & Networks, studying for **CompTIA Security+ (SY0-701)**, exam September 2026.
  
-Long term I'm heading for **DFIR — Digital Forensics & Incident Response**. The route there runs through a SOC, so that's what I'm building for now: the triage, log and reporting skills a Tier 1 analyst uses every day, with forensics depth added on top as I go.
+Long term I'm heading for **DFIR**. The road there runs through a SOC, so that's what I'm building for now.
  
-Everything in these repos is work I've actually done in my own lab, written up in my own words.
+Everything in these repositories is my own lab work, written up in my own words.
  
 ---
  
-## What I'm working on
+## What I can do today
  
-**Alert triage and log analysis** — Windows Security and Sysmon telemetry in Splunk: logon failures, process creation, persistence in Run keys and services. Building the habit of going from an alert to a defensible conclusion.
- 
-**Investigative method** — hypothesis → evidence → revised hypothesis → conclusion. Every writeup here is structured that way on purpose, because that's what an analyst is actually paid for.
- 
-**Writing clearly** — security work is judged on the report. I treat every README and writeup as a writing sample.
- 
-**Breadth before depth** — disk, memory, network and log analysis, without specialising yet. The plan is to stay broad while I get into a SOC, then deepen toward forensics.
+| Capability | Evidence |
+|---|---|
+| Triage Windows authentication and process-execution alerts (4624, 4625, 4688, 7045, 1102) | [`soc-analyst-labs`](https://github.com/TasoGiann/soc-analyst-labs) |
+| Write SPL searches and detections in Splunk against Sysmon telemetry | [`soc-analyst-labs`](https://github.com/TasoGiann/soc-analyst-labs) |
+| Build and baseline an instrumented lab environment from scratch | [`dfir-home-lab`](https://github.com/TasoGiann/dfir-home-lab) |
+| Run first-minute triage on a compromised Linux host | [`linux-triage-toolkit`](https://github.com/TasoGiann/linux-triage-toolkit) |
+| Analyse phishing emails — headers, sender infrastructure, payload reputation | TryHackMe SEC1 · lab writeups |
+| Document a case to an audit-ready standard a Tier 2 can pick up | every writeup here |
  
 ---
  
 ## Repositories
  
-- **[`soc-analyst-labs`](https://github.com/TasoGiann/soc-analyst-labs)** — hands-on SOC work: detection engineering, log analysis and incident triage exercises.
-
+### [`dfir-home-lab`](https://github.com/TasoGiann/dfir-home-lab)
+Full build documentation for the lab everything else runs on — VirtualBox topology, Sysmon configuration, logging policy, and captured baselines (processes, listening sockets, services, Run keys).
+*Shows:* environment setup, logging design, systematic documentation.
+ 
+### [`soc-analyst-labs`](https://github.com/TasoGiann/soc-analyst-labs)
+Hands-on detection and triage work: Splunk searches over Windows Security and Sysmon logs, detections mapped to MITRE ATT&CK, and triage walkthroughs structured as hypothesis → evidence → conclusion.
+*Shows:* the core Tier 1 loop — alert in, defensible answer out.
+ 
+### [`linux-triage-toolkit`](https://github.com/TasoGiann/linux-triage-toolkit)
+Bash tooling for the first minutes on a suspect Linux host: processes, network connections, persistence locations, recent modifications.
+*Shows:* scripting, Linux internals, incident-response instinct.
+ 
+> **Next up:** Windows artifact walkthroughs (Prefetch, Amcache, ShimCache, event logs) and network forensics writeups from public pcaps.
+ 
 ---
  
 ## Home Lab
  
-A segmented, host-only lab where the work above is done.
+Segmented, host-only lab on VirtualBox — an MSI Cyborg 15 acting as a very small SOC.
  
-- **Analyst workstation:** Parrot OS
-- **Windows target:** Windows 11 — Sysmon, PowerShell script-block logging and process auditing enabled
-- **Linux target:** Ubuntu Server
-- **SIEM:** Splunk, ingesting Windows Security and Sysmon logs into a dedicated index
-- **Platform:** MSI Cyborg 15 / VirtualBox / host-only networking
-- **Baselines captured:** running processes, listening sockets, SUID binaries, enabled services, Run keys
-Full build documentation lives in the `dfir-home-lab` repo.
+| Component | Setup |
+|---|---|
+| SIEM | Splunk — Windows Security and Sysmon logs into a dedicated index |
+| Windows target | Windows 11 — Sysmon, PowerShell script-block logging, process auditing |
+| Linux target | Ubuntu Server |
+| Analyst workstation | Parrot OS |
+| Network | Host-only, isolated |
+| Baselines | Processes, listening sockets, SUID binaries, services, Run keys |
  
----
- 
-## Tools & Techniques
- 
-**SIEM / detection:** Splunk (SPL searches and detections), Windows Event Log analysis (4624, 4625, 4688, 7045, 1102), Sysmon telemetry, MITRE ATT&CK
- 
-**Network analysis:** Wireshark, tcpdump
- 
-**Windows:** registry forensics, PowerShell for triage, Eric Zimmerman's tools (EvtxECmd, PECmd, MFTECmd)
- 
-**Linux:** journalctl, grep/awk/sed pipelines, lsof, ss, systemd analysis, Bash scripting
- 
-**Forensics (learning):** Volatility 3, Autopsy
- 
-**Environments:** Windows 10/11, Linux (Parrot, Ubuntu), VirtualBox
+Build documentation: [`dfir-home-lab`](https://github.com/TasoGiann/dfir-home-lab)
  
 ---
  
-## Certifications
+## Skills
  
-**Completed**
-- Google Cybersecurity Professional Certificate
-- TryHackMe Cyber Security 101 (SEC1)
-**In progress**
-- CompTIA Security+ (SY0-701) — exam September 2026
-**Next**
-- HTB Certified Defensive Security Analyst (CDSA) — hands-on blue team certification, the practical follow-on to Security+
+**Detection & SIEM** — Splunk (SPL), Windows Event Log analysis, Sysmon telemetry, MITRE ATT&CK mapping, alert triage and escalation
+ 
+**Windows** — authentication and process-creation events, registry persistence, PowerShell for triage, Eric Zimmerman's tools (EvtxECmd, PECmd, MFTECmd)
+ 
+**Linux** — journalctl, `grep`/`awk`/`sed` pipelines, `lsof`, `ss`, systemd analysis, Bash scripting
+ 
+**Network** — TCP/IP, DNS, HTTP/S, Wireshark, tcpdump
+ 
+**Learning** — Volatility 3, Autopsy, Sigma rules
+ 
 ---
  
-## Education
+## Certifications & Education
  
-**BSc (Hons) Cybersecurity & Networks** — Metropolitan College, Greece, in partnership with **University of East London**, UK · second year, ongoing
+| | |
+|---|---|
+| **In progress** | CompTIA Security+ (SY0-701) — exam September 2026 |
+| **Certified** | TryHackMe Cyber Security 101 (SEC1) · Google Cybersecurity Professional Certificate |
+| **Next** | HTB Certified Defensive Security Analyst (CDSA) |
+| **Degree** | BSc (Hons) Cybersecurity & Networks — Metropolitan College, in partnership with University of East London · second year, ongoing |
  
 ---
  
 ## Open to
  
-SOC Analyst (Tier 1) · Security Analyst · Junior Incident Response · Blue team roles across the EU — remote, hybrid or on-site. Open to relocation.
+**SOC Analyst (Tier 1)** · Security Analyst · Junior Incident Response · Blue team roles across the EU — remote, hybrid or on-site. Open to relocation.
  
----
+📧 tasos.giannoulis@proton.me · 💼 [LinkedIn](https://www.linkedin.com/in/tasos-giannoulis/)
  
-## Contact
- 
-- **LinkedIn:** [tasos-giannoulis](https://www.linkedin.com/in/tasos-giannoulis/)
-- **Email:** tasos.giannoulis@proton.me
 ---
  
 <sub>Everything in my repositories is original work, done in my own lab, written in my own words. I use AI as a tutor and sparring partner — never as a ghostwriter for anything that gets published.</sub>
+ 
