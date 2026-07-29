@@ -27,11 +27,8 @@ Everything in these repos is work I've actually done in my own lab, written up i
  
 ## Repositories
  
-- **[`dfir-home-lab`](https://github.com/TasoGiann/dfir-home-lab)** — documented lab build: VirtualBox setup, network topology, Sysmon configuration, baseline captures and lessons learned.
 - **[`soc-analyst-labs`](https://github.com/TasoGiann/soc-analyst-labs)** — hands-on SOC work: detection engineering, log analysis and incident triage exercises.
-- **[`linux-triage-toolkit`](https://github.com/TasoGiann/linux-triage-toolkit)** — Bash tooling for first-minute triage on a Linux host during an incident.
-*Next up:* Windows artifact walkthroughs (Prefetch, Amcache, ShimCache, event logs) and network forensics writeups from public pcaps.
- 
+
 ---
  
 ## Home Lab
