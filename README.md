@@ -12,7 +12,7 @@
 
 I work an alert from the first log line to a written conclusion someone else can act on.
 
-Coming from a customer support background, I now run a home SOC where I ingest Windows Security and Sysmon telemetry into Splunk and build detections against it. Second year of a BSc in Cybersecurity & Networks, studying for **CompTIA Security+ (SY0-701)**, exam September 2026.
+Coming from a customer support background, I now run a home SOC where I ingest Windows Security and Sysmon telemetry into Splunk and build detections against it. Second year of a BSc in Cybersecurity & Networks, studying for **CompTIA Security+ (SY0-701)**, exam December 2026.
 
 Everything here is my own lab work, written up in my own words.
 
