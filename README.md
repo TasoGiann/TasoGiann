@@ -37,9 +37,7 @@ Detection and triage work from this lab lives in **[`soc-analyst-labs`](https://
 
 ## What I'm learning right now
 
-**CompTIA Security+ (SY0-701)** — exam September 2026. Threats and attacks, architecture, security operations, governance and risk.
-
-**HTB Academy — CDSA path.** Incident handling: NIST response lifecycle, Cyber Kill Chain, MITRE ATT&CK mapping, TheHive case management. Detection labs: credential dumping, persistence via Event ID 7045, brute-force alerts on service accounts.
+**CompTIA Security+ (SY0-701)** — exam December 2026. Threats and attacks, architecture, security operations, governance and risk.
 
 **Splunk and detection engineering** — writing SPL against my own Sysmon and Windows Security telemetry, and turning alerts into documented cases.
 
@@ -55,7 +53,6 @@ Detection and triage work from this lab lives in **[`soc-analyst-labs`](https://
 |---|---|
 | **In progress** | CompTIA Security+ (SY0-701) — exam September 2026 |
 | **Certified** | TryHackMe Cyber Security 101 (SEC1) · Google Cybersecurity Professional Certificate |
-| **Next** | HTB Certified Defensive Security Analyst (CDSA) |
 | **Degree** | BSc (Hons) Cybersecurity & Networks — Metropolitan College, in partnership with University of East London · second year, ongoing |
 
 ---
