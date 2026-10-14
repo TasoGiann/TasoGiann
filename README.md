@@ -51,7 +51,7 @@ Detection and triage work from this lab lives in **[`soc-analyst-labs`](https://
 
 | | |
 |---|---|
-| **In progress** | CompTIA Security+ (SY0-701) — exam September 2026 |
+| **In progress** | CompTIA Security+ (SY0-701) — exam December 2026 |
 | **Certified** | TryHackMe Cyber Security 101 (SEC1) · Google Cybersecurity Professional Certificate |
 | **Degree** | BSc (Hons) Cybersecurity & Networks — Metropolitan College, in partnership with University of East London · second year, ongoing |
 
