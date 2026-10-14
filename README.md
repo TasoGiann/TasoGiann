@@ -31,7 +31,7 @@ Segmented, host-only lab on VirtualBox — a very small SOC I run end to end.
 | Network | Host-only, isolated |
 | Baselines | Processes, listening sockets, SUID binaries, services, Run keys |
 
-Detection and triage work from this lab lives in **[`soc-analyst-labs`](https://github.com/TasoGiann/soc-analyst-labs)**. Published so far: **Lab 01 — Brute-Force Detection** (attack simulation, SPL detection, triage, lessons learned). New labs are added from December 2026, after my Security+ exam.
+Labs are being rebuilt from scratch; publishing starts December 2026, after my Security+ exam."
 
 ---
 
