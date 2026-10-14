@@ -5,7 +5,7 @@
 <a href="https://www.linkedin.com/in/tasos-giannoulis/"><img src="https://img.shields.io/badge/LinkedIn-0072b1?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <img src="https://img.shields.io/badge/Focus-SOC%20Analyst%20(Tier%201)-0B3D91?style=for-the-badge">
 <img src="https://img.shields.io/badge/Security%2B-In%20Progress-C1440E?style=for-the-badge">
-<img src="https://img.shields.io/badge/Location-Greece%20%C2%B7%20Remote%20OK-004080?style=for-the-badge">
+<img src="https://img.shields.io/badge/Location-Greece%20%C2%B7%20Remote%20-004080?style=for-the-badge">
 </p>
 
 ---
